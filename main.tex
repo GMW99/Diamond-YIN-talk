@@ -1,0 +1,51 @@
+\documentclass[notes,11pt]{beamer}
+
+%%%%%%%% tema e cor %%%%%%%%
+\mode<presentation> {
+\usetheme{Madrid}
+}
+
+
+\input{config.tex}
+%%%%%%%% Title %%%%%%%%
+\title[Big Data]{High Performance Object Stores} 
+
+% emails
+%%%%%%%% Name %%%%%%%%
+% \author[Gabryel Mason-Williams, Dave Bond, Mark Basham]{Gabryel Mason-Williams\\ Dave Bond\\ Mark Basham} 
+\author[]{Gabryel Mason-Williams\textsuperscript{1,2} \and Dave Bond \inst{1} \and Mark Basham \inst{1,3}}
+% \institute[shortinst]{\textsuperscript{1} Diamond Light Source \and \inst{2} University of Plymouth \and \inst{3} Rosalind Franklin Institute}
+
+\begin{document}
+\input{files/pre-slides.tex}
+\section{Part 1}
+\section{Data at Diamond}
+\input{files/data}
+\section{How do we store data \& The problems with it}
+\input{files/storage}
+\section{The solution maybe?}
+\input{files/objectStorage}
+\section{What are we trying to solve}
+\section{Part 2}
+\include{files/part2}
+\section{Ceph}
+\input{files/ceph}
+\section{RAM}
+\input{files/ram}
+\section{Ceph and Storage Device}
+\input{files/cephStorage}
+\section{Part 3}
+\include{files/part3}
+\section{Compute Cluster}
+\include{files/computeCluster}
+\section{Performance}
+\include{files/performance}
+\section{Use cases}
+\include{files/usecase}
+\section{Conclusion}
+\include{files/conclusion}
+\section{Questions}
+\input{files/questions}
+
+
+\end{document}
